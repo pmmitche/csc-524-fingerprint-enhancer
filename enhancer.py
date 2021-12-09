@@ -34,7 +34,7 @@ def enhance_fingerprints(dir_path):
         return
     
     for file in os.listdir(dir_path):
-        enhance_fingerprint(file)
+        enhance_fingerprint(os.path.join(dir_path, file))
 
 
 def show_enhanced_print(img_path):
